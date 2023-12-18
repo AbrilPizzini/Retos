@@ -1,7 +1,5 @@
 package TimeConversion;
 
-import java.beans.IntrospectionException;
-
 public class Solution1 {
 
     /*
