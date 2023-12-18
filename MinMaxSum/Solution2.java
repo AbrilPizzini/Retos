@@ -27,22 +27,22 @@ class Solution2 {
         // su representación como un entero primitivo, calcula la suma de todos los
         // elementos del flujo
 
-        int sum = arr.stream().mapToInt(Integer::intValue).sum();
+        long sum = arr.stream().mapToLong(Long::valueOf).sum();
 
         // Encontrando el mínimo y el máximo
 
-        int max = arr.stream()
-                .mapToInt(Integer::intValue)
+        long max = arr.stream()
+                .mapToLong(Long::valueOf)
                 .max()
                 .orElse(0);
 
-        int min = arr.stream()
-                .mapToInt(Integer::intValue)
+        long min = arr.stream()
+                .mapToLong(Long::valueOf)
                 .min()
                 .orElse(0);
 
-        int minSum = sum - max; // La suma mínima excluye el máximo
-        int maxSum = sum - min; // La suma máxima excluye el mínimo
+        long minSum = sum - max; // La suma mínima excluye el máximo
+        long maxSum = sum - min; // La suma máxima excluye el mínimo
 
         System.out.println(minSum + " " + maxSum);
 

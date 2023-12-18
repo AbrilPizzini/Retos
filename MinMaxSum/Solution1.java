@@ -23,11 +23,11 @@ class Solution1 {
     public static void miniMaxSum(List<Integer> arr) {
         // Write your code here
 
-        int sum = 0;
-        int min = Integer.MAX_VALUE; // Se inicializa la variable min con el Maximo Valor de Enteros para que sea
-                                     // siempre menor
-        int max = Integer.MIN_VALUE; // Se inicializa la variable max con el Minimo Valor de Enteros para que sea
-                                     // siempre mayor
+        long sum = 0;
+        long min = Long.MAX_VALUE; // Se inicializa la variable min con el Maximo Valor de Enteros para que sea
+                                   // siempre menor
+        long max = Long.MIN_VALUE; // Se inicializa la variable max con el Minimo Valor de Enteros para que sea
+                                   // siempre mayor
 
         for (Integer num : arr) {
 
@@ -46,8 +46,8 @@ class Solution1 {
 
         }
 
-        int minSum = sum - max; // La suma mínima excluye el número máximo
-        int maxSum = sum - min; // La suma máxima excluye el número mínimo
+        long minSum = sum - max; // La suma mínima excluye el número máximo
+        long maxSum = sum - min; // La suma máxima excluye el número mínimo
 
         System.out.println(minSum + " " + maxSum);
 
